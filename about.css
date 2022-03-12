@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*untuk layar device berukuran kecil*/
+@media screen and (max-width: 450px) {
+    .banner{
+        width: 50%;
+    }
+    .banner .text p {
+        font-size: 10px;
+    }
+ }
+  
+ /*untuk layar device berukuran sedang*/
+ @media screen and (min-width: 550px) {
+    
+ }

@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #262632;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #434142; 
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #939472; 
+}
+
+/*Navbar*/
+nav .collapse li{
+	margin-left: 50px;
+}
+
+/*banner*/
+.jumbotron{
+	background-image: url(img/dark.jpg);
+	background-size: cover;
+	height: 700px;
+	color: white;		
+}
+.jumbotron .content{
+	display: flex;
+	align-items: center;
+	height: 570px;
+	width: 100%;
+	text-align: center;
+}
+.jumbotron .content h1{
+	overflow-y: hidden;
+	font-size: 60px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.jumbotron .content .garis1{
+	width: 250px;
+	background-color: #fff;
+	margin-top: 0px;
+}
+.jumbotron .content h3{
+	font-size: 25px;
+	overflow-y: hidden;
+}
+.jumbotron .content button{
+	margin-top: 20px;
+}
+
+/*About*/
+.about{
+	padding-top: 50px;
+	color: white;
+}
+.about .garis-about{
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+}
+
+/*Ability*/
+.ability
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 70px 100px 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ability .garis-about{
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+}
+.ability h3{
+	color: white;
+} 
+.isi li {
+	position: relative;
+	list-style: none;
+	margin: 40px 0;
+	font-weight: 500;
+	/* text-transform: uppercase; */
+	color: white;
+	overflow-x: visible;
+}
+
+.isi li:before {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 100%;
+	height: 15px;
+	background-color: #434142;
+	border-radius: 1000px;
+}
+
+.isi li:after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 0;
+	height: 15px;
+	background-color: #16202f;
+	border-radius: 2000px;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+li.html:after {
+	animation-name: html;
+}
+
+@keyframes html {
+	to {
+		width: 95%;
+	}
+}
+
+li.php:after {
+	animation-name: php;
+}
+
+@keyframes php {
+	to {
+		width: 75%;
+	}
+}
+
+li.csharp:after {
+	animation-name: csharp;
+}
+
+@keyframes csharp {
+	to {
+		width: 85%;
+	}
+}
+
+li.java:after {
+	animation-name: java;
+}
+
+@keyframes java {
+	to {
+		width: 70%;
+	}
+}
+
+li.mssql:after {
+	animation-name: mssql;
+}
+
+@keyframes mssql {
+	to {
+		width: 60%;
+	}
+}
+
+li.ui:after {
+	animation-name: ui;
+}
+
+@keyframes ui {
+	to {
+		width: 65%;
+	}
+}
+.ability .gambar .col-md-4 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+.ability .gambar .col-md-4 img:hover{
+	filter: grayscale(0%);
+}
+
+/* Achievement */
+.achievement .garis-about{
+	width: 10%;
+	height: 2px;
+	background-color: #1d2630;
+	margin-top: 0px;
+}
